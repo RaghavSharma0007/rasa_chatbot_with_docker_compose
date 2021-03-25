@@ -1,0 +1,41 @@
+version: '3'
+services:
+  rasa:
+    container_name: rasa-server
+    image: rasa/rasa:1.10.23-full
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+      
+    depends_on:
+      - action-server
+      - mysql
+      
+      
+  mysql:
+    container_name: mysql_rasa1
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: rasa_db
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'foodbot@123'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '32000:3306'
+      
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro
+    
+    
+    
+  action-server:
+    container_name: rasa-custom
+    build: ./
+    links:
+      - mysql
+    ports:
+      - "5055:5055" 

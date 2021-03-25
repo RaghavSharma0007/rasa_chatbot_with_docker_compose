@@ -1,0 +1,367 @@
+2021-03-17 11:47:06,264 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-17 11:47:10,262 [ERROR]  Could not load model due to The model version is too old to be loaded by this Rasa NLU instance. Either retrain the model, or run with an older version. Model version: 1.8.0 Instance version: 1.9.0.
+2021-03-17 11:47:10,262 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/opt/venv/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/opt/venv/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/run.py", line 258, in load_agent_on_start
+    action_endpoint=endpoints.action,
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/agent.py", line 271, in load_agent
+    remote_storage=remote_storage,
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/agent.py", line 938, in load_local_model
+    path_to_model_archive=model_archive,
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/agent.py", line 387, in load
+    interpreter = NaturalLanguageInterpreter.create(nlu_model)
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/interpreter.py", line 54, in create
+    return RasaNLUInterpreter(model_directory=obj)
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/interpreter.py", line 274, in __init__
+    self._load_interpreter()
+  File "/opt/venv/lib/python3.6/site-packages/rasa/core/interpreter.py", line 297, in _load_interpreter
+    self.interpreter = Interpreter.load(self.model_directory)
+  File "/opt/venv/lib/python3.6/site-packages/rasa/nlu/model.py", line 300, in load
+    Interpreter.ensure_model_compatibility(model_metadata)
+  File "/opt/venv/lib/python3.6/site-packages/rasa/nlu/model.py", line 275, in ensure_model_compatibility
+    "".format(model_version, rasa.__version__)
+rasa.nlu.model.UnsupportedModelError: The model version is too old to be loaded by this Rasa NLU instance. Either retrain the model, or run with an older version. Model version: 1.8.0 Instance version: 1.9.0
+2021-03-17 12:08:53,981 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-17 12:09:02,303 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-17 12:17:00,861 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-17 12:17:10,944 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-17 12:22:51,685 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-17 12:22:59,869 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-17 12:45:45,299 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-17 12:45:53,444 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-17 12:47:30,963 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 05:11:16,804 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 05:11:27,569 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 05:14:59,214 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 05:15:07,778 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 05:17:37,889 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 05:17:46,459 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 05:21:55,008 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 05:22:03,483 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 05:52:47,312 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 05:52:55,570 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 05:52:55,572 [INFO ]  Rasa server is up and running.
+2021-03-18 05:54:41,490 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 06:01:12,342 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 06:01:20,498 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 06:01:20,499 [INFO ]  Rasa server is up and running.
+2021-03-18 06:02:44,833 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 06:04:34,820 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 06:04:43,577 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 06:04:43,578 [INFO ]  Rasa server is up and running.
+2021-03-18 06:05:52,316 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 06:17:33,588 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 06:17:41,694 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 06:17:41,695 [INFO ]  Rasa server is up and running.
+2021-03-18 06:18:32,564 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 07:08:25,594 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 07:08:33,868 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 07:08:33,869 [INFO ]  Rasa server is up and running.
+2021-03-18 07:09:55,454 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 07:29:38,593 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 07:29:46,816 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 07:29:46,817 [INFO ]  Rasa server is up and running.
+2021-03-18 08:30:37,543 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 08:30:46,002 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 08:30:46,004 [INFO ]  Rasa server is up and running.
+2021-03-18 08:31:42,998 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 08:34:30,699 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 08:34:38,859 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 08:34:38,860 [INFO ]  Rasa server is up and running.
+2021-03-18 08:39:45,814 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:41:41,583 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:41:48,143 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:41:53,270 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:42:33,716 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:42:44,515 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:43:24,538 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 08:43:32,858 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 08:43:32,859 [INFO ]  Rasa server is up and running.
+2021-03-18 08:43:40,493 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:55:17,499 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 08:55:25,746 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 08:55:25,762 [INFO ]  Rasa server is up and running.
+2021-03-18 08:55:33,021 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Unexpected character in found when decoding object value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.7/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/opt/venv/lib/python3.7/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/opt/venv/lib/python3.7/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2021-03-18 08:56:50,975 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 08:57:59,961 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 08:58:08,289 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 08:58:08,290 [INFO ]  Rasa server is up and running.
+2021-03-18 08:58:13,662 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 08:58:17,811 [ERROR]  Encountered an exception while running action 'action_south'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 08:59:10,742 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 09:07:09,247 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 09:07:17,547 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 09:07:17,548 [INFO ]  Rasa server is up and running.
+2021-03-18 11:51:25,623 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 11:52:02,310 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 11:52:02,319 [INFO ]  Rasa server is up and running.
+2021-03-18 12:03:27,887 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 12:03:36,274 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 12:03:36,275 [INFO ]  Rasa server is up and running.
+2021-03-18 12:19:27,770 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 12:19:36,018 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 12:19:36,019 [INFO ]  Rasa server is up and running.
+2021-03-18 12:21:25,216 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 12:24:53,947 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 12:25:01,981 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 12:25:01,983 [INFO ]  Rasa server is up and running.
+2021-03-18 12:25:11,615 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 12:25:53,002 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 12:32:48,917 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 12:35:25,646 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 12:35:33,989 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 12:35:33,990 [INFO ]  Rasa server is up and running.
+2021-03-18 12:36:13,950 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-18 12:43:54,886 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-18 12:44:02,813 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-18 12:44:02,814 [INFO ]  Rasa server is up and running.
+2021-03-18 12:44:47,544 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 05:14:49,014 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 05:15:03,218 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 05:15:03,219 [INFO ]  Rasa server is up and running.
+2021-03-19 06:00:15,255 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 06:00:23,655 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 06:00:23,656 [INFO ]  Rasa server is up and running.
+2021-03-19 06:22:46,085 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 06:57:38,912 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 06:57:47,141 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 06:57:47,142 [INFO ]  Rasa server is up and running.
+2021-03-19 06:59:09,361 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 07:10:15,503 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 07:10:23,437 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 07:10:23,438 [INFO ]  Rasa server is up and running.
+2021-03-19 07:31:55,265 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 07:32:25,183 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 07:32:25,184 [INFO ]  Rasa server is up and running.
+2021-03-19 07:42:45,936 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 07:42:53,692 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 07:42:53,693 [INFO ]  Rasa server is up and running.
+2021-03-19 07:52:32,660 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 08:00:39,295 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:05:27,403 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:29:44,797 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 11:29:55,143 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 11:29:55,144 [INFO ]  Rasa server is up and running.
+2021-03-19 11:30:29,945 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:32:37,532 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:34:46,092 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 11:34:54,300 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 11:34:54,301 [INFO ]  Rasa server is up and running.
+2021-03-19 11:36:43,872 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 11:36:52,093 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 11:36:52,094 [INFO ]  Rasa server is up and running.
+2021-03-19 11:44:34,698 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 11:44:43,327 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 11:44:43,328 [INFO ]  Rasa server is up and running.
+2021-03-19 11:45:18,231 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:45:37,677 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:52:16,120 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 11:53:19,485 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 11:53:27,614 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 11:53:27,615 [INFO ]  Rasa server is up and running.
+2021-03-19 11:53:53,047 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 12:20:39,763 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 12:20:47,884 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 12:20:47,886 [INFO ]  Rasa server is up and running.
+2021-03-19 12:21:31,622 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 12:24:18,872 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 12:33:59,183 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 12:34:07,881 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 12:34:07,882 [INFO ]  Rasa server is up and running.
+2021-03-19 12:34:31,278 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 12:45:07,413 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 12:45:16,037 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 12:45:16,039 [INFO ]  Rasa server is up and running.
+2021-03-19 12:46:01,690 [ERROR]  Encountered an exception while running action 'action_north'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 12:53:04,188 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 12:53:12,149 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 12:53:12,150 [INFO ]  Rasa server is up and running.
+2021-03-19 12:55:03,539 [ERROR]  Encountered an exception while running action 'action_distance'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 13:40:34,245 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 13:40:45,223 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 13:40:45,224 [INFO ]  Rasa server is up and running.
+2021-03-19 13:41:59,614 [ERROR]  Encountered an exception while running action 'action_distance'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 13:49:15,911 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 13:49:24,034 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 13:49:24,036 [INFO ]  Rasa server is up and running.
+2021-03-19 13:50:11,147 [ERROR]  Encountered an exception while running action 'action_distance'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-19 14:03:44,324 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-19 14:03:52,659 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-19 14:03:52,660 [INFO ]  Rasa server is up and running.
+2021-03-19 14:05:02,448 [ERROR]  Encountered an exception while running action 'action_distance'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-24 05:51:31,240 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-24 05:51:44,288 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-24 05:51:44,324 [INFO ]  Rasa server is up and running.
+2021-03-24 05:53:16,005 [ERROR]  Encountered an exception while running action 'action_distance'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-24 05:57:41,797 [ERROR]  Encountered an exception while running action 'action_south'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-24 05:59:02,626 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-24 05:59:11,581 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-24 05:59:11,582 [INFO ]  Rasa server is up and running.
+2021-03-24 06:00:35,086 [ERROR]  Encountered an exception while running action 'action_south'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-24 06:01:44,688 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-24 06:01:52,870 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-24 06:01:52,871 [INFO ]  Rasa server is up and running.
+2021-03-24 06:02:05,214 [ERROR]  Encountered an exception while running action 'action_south'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-03-24 06:08:42,757 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-03-24 06:08:51,059 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2021-03-24 06:08:51,060 [INFO ]  Rasa server is up and running.
+2021-03-24 06:11:33,124 [ERROR]  Encountered an exception while running action 'action_restart'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
